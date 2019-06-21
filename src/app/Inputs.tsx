@@ -12,13 +12,13 @@ const Inputs: FC<Props> = () => {
 			<div>
 				Name {' '}
 				<input type="text" autoComplete="off" value={store.name}
-					onChange={e => setStore({...store, name: e.target.value})} />
+					onChange={e => setStore({name: e.target.value})} />
 			</div>
 
 			<div>
 				City {' '}
 				<input type="text" autoComplete="off" value={store.city}
-					onChange={e => setStore({...store, city: e.target.value})} />
+					onChange={e => setStore({city: e.target.value})} />
 			</div>
 		</div>
 	);

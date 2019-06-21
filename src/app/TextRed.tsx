@@ -6,7 +6,7 @@ interface Props {
 	label: string;
 }
 
-const RedText: FC<Props> = (p) => {
+const TextRed: FC<Props> = (p) => {
 	const [store, setStore] = useStore();
 
 	return (
@@ -17,4 +17,4 @@ const RedText: FC<Props> = (p) => {
 	);
 };
 
-export default RedText;
+export default TextRed;
