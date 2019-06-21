@@ -1,12 +1,24 @@
-import React from 'react';
+import React, {FC} from 'react';
+
+import {ContextStore, newStore} from './ContextStore';
+import Inputs from './Inputs';
+import TextBlue from './TextBlue';
+import TextRed from './TextRed';
 
 interface Props { }
 
-const App: React.FC<Props> = () => {
+/**
+ * Application root component.
+ */
+const App: FC<Props> = () => {
 	return (
-		<div>
-			Hello world
-		</div>
+		<ContextStore.Provider value={newStore()}>
+			<div>
+				<Inputs />
+				<TextBlue />
+				<TextRed />
+			</div>
+		</ContextStore.Provider>
 	);
 };
 
