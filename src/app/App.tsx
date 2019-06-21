@@ -15,8 +15,9 @@ const App: FC<Props> = () => {
 		<ContextStore.Provider value={newStore()}>
 			<div>
 				<Inputs />
+				<hr />
 				<TextBlue />
-				<TextRed />
+				<TextRed label="City"/>
 			</div>
 		</ContextStore.Provider>
 	);

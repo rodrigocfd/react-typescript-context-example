@@ -14,12 +14,6 @@ export interface Store {
 export type StoreGetSet = [Store, (s: Store) => void];
 
 /**
- * Context object, to be passed to useContext hook.
- */
-export const ContextStore = React.createContext(
-	<StoreGetSet>[<Store>{}, (s: Store): void => {}]);
-
-/**
  * Creates a new store with default values.
  * Return value can be passed to ContextStore.Provider.
  */
@@ -29,6 +23,12 @@ export function newStore(): StoreGetSet {
 		city: 'Brasília'
 	});
 };
+
+/**
+ * Context object, to be passed to useContext hook.
+ */
+export const ContextStore = React.createContext(
+	<StoreGetSet>[<Store>{}, (s: Store): void => {}]);
 
 /**
  * Syntactic sugar to useContext hook.

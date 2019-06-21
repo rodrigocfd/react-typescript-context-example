@@ -2,13 +2,18 @@ import React, {FC} from 'react';
 
 import useStore from './ContextStore';
 
-interface Props { }
+interface Props {
+	label: string;
+}
 
-const RedText: FC<Props> = () => {
+const RedText: FC<Props> = (p) => {
 	const [store, setStore] = useStore();
 
 	return (
-		<div style={{color: 'red'}}>{store.city}</div>
+		<div>
+			<span>{p.label}: </span>
+			<span style={{color: 'red'}}>{store.city}</span>
+		</div>
 	);
 };
 
