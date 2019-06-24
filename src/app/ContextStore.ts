@@ -12,10 +12,11 @@ export interface Store {
  * Tuple returned by useContext hook.
  */
 type SetStoreFunc = (s: Store) => void;
-export type ContextGetSetTuple = [Store, SetStoreFunc];
+export type ContextGetSetTuple = [Readonly<Store>, SetStoreFunc];
 
 /**
- * Creates a new store with default values.
+ * Creates a new store with default values and pushes it onto useState hook
+ * of current component; intended to be used at your root component.
  * Return value can be passed to ContextStore.Provider.
  */
 export function newStore(): ContextGetSetTuple {
@@ -36,7 +37,7 @@ export const ContextStore = React.createContext(
  */
 type SetPartialStoreFunc = (p: Partial<Store>) => void;
 
-export default function useStore(): [Store, SetPartialStoreFunc] {
+export default function useStore(): [Readonly<Store>, SetPartialStoreFunc] {
 	const [store, setStore] = React.useContext(ContextStore);
 	function setPartialStore(p: Partial<Store>) {
 		setStore({...store, ...p});
