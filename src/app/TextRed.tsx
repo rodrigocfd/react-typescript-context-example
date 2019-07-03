@@ -6,8 +6,8 @@ interface Props {
 	label: string;
 }
 
-const TextRed: FC<Props> = (p) => {
-	const [store, setStore] = useStore();
+const TextRed: FC<Readonly<Props>> = p => {
+	const [store] = useStore();
 
 	return (
 		<div>

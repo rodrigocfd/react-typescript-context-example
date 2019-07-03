@@ -3,10 +3,15 @@ import React from 'react';
 /**
  * Global app context store.
  */
-export interface Store {
-	name: string;
-	city: string;
-};
+function createStore() {
+	return {
+		name: '',
+		city: ''
+	};
+}
+
+export interface Store
+	extends ReturnType<typeof createStore> { }
 
 /**
  * Tuple returned by useContext hook.
@@ -20,10 +25,7 @@ export type ContextGetSetTuple = [Readonly<Store>, SetStoreFunc];
  * Return value can be passed to ContextStore.Provider.
  */
 export function newStore(): ContextGetSetTuple {
-	return React.useState(<Store>{
-		name: 'foo',
-		city: 'Brasília'
-	});
+	return React.useState(createStore());
 };
 
 /**

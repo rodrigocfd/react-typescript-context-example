@@ -2,10 +2,8 @@ import React, {FC} from 'react';
 
 import useStore from './ContextStore';
 
-interface Props { }
-
-const TextBlue: FC<Props> = () => {
-	const [store, setStore] = useStore();
+const TextBlue: FC = () => {
+	const [store] = useStore();
 
 	return (
 		<div style={{color: 'blue'}}>{store.name}</div>
