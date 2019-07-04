@@ -5,12 +5,10 @@ import Inputs from './Inputs';
 import TextBlue from './TextBlue';
 import TextRed from './TextRed';
 
-interface Props { }
-
 /**
  * Application root component.
  */
-const App: FC<Props> = () => {
+const App: FC = () => {
 	return (
 		<ContextStore.Provider value={newStore()}>
 			<div>

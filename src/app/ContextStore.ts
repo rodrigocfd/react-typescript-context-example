@@ -1,17 +1,18 @@
 import React from 'react';
 
 /**
- * Global app context store.
+ * Global app context store. You must explicitly define the types
+ * with "as" only if you're using non-built-in types.
  */
 function createStore() {
 	return {
-		name: '',
-		city: ''
+		name: '' as string,
+		city: '' as string
 	};
 }
 
 export interface Store
-	extends ReturnType<typeof createStore> { }
+	extends ReturnType<typeof createStore> { };
 
 /**
  * Tuple returned by useContext hook.
