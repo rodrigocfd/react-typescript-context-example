@@ -4,10 +4,10 @@ A short React example of how to use [Context](https://reactjs.org/docs/context.h
 
 What it does:
 
-* Fields and default values of store are defined in [ContextStore.ts](src/app/ContextStore.ts).
+* Fields and default values of store are defined in [ContextStore.ts](src/app/ContextStore.ts?ts=4).
 
-* A new store is created in [App.tsx](src/app/App.tsx) with `newStore`, which also encapsulates an useState call.
+* A new store is created in [App.tsx](src/app/App.tsx?ts=4) with `newStore`, which also encapsulates an useState call.
 
-* Store is modified in [Inputs.tsx](src/app/Inputs.tsx) with get/set tuple returned from `useStore`.
+* Store is modified in [Inputs.tsx](src/app/Inputs.tsx?ts=4) with get/set tuple returned from `useStore`.
 
-* Store content is displayed in [TextBlue.tsx](src/app/TextBlue.tsx) and [TextRed.tsx](src/app/TextRed.tsx) with store returned from `useStore`.
+* Store content is displayed in [TextBlue.tsx](src/app/TextBlue.tsx?ts=4) and [TextRed.tsx](src/app/TextRed.tsx?ts=4) with store returned from `useStore`.
