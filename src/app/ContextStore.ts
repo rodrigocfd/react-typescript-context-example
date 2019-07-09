@@ -1,8 +1,10 @@
 import React from 'react';
 
 /**
- * Global app context store. You must explicitly define the types
- * with "as" only if you're using non-built-in types.
+ * Defines the structure of global context store, and default values.
+ * If you're using a non-built-in type, use "as" to declare the type.
+ * This structure is the only thing you need to customize in this file,
+ * everything else will adapt according to it.
  */
 function createStore() {
 	return {
