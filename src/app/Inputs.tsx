@@ -2,9 +2,7 @@ import React, {FC} from 'react';
 
 import useStore from './ContextStore';
 
-interface Props { }
-
-const Inputs: FC<Props> = () => {
+const Inputs: FC = () => {
 	const [store, setStore] = useStore();
 
 	return (
