@@ -2,15 +2,19 @@
 	"name": "react-typescript-context-example",
 	"version": "1.0.0",
 	"private": true,
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/rodrigocfd/react-typescript-context-example.git"
+	},
 	"dependencies": {
 		"@types/jest": "24.0.15",
-		"@types/node": "^12.0.10",
-		"@types/react": "16.8.22",
+		"@types/node": "^12.6.2",
+		"@types/react": "16.8.23",
 		"@types/react-dom": "16.8.4",
 		"react": "^16.8.6",
 		"react-dom": "^16.8.6",
 		"react-scripts": "2.1.8",
-		"typescript": "3.5.2"
+		"typescript": "3.5.3"
 	},
 	"scripts": {
 		"start": "react-scripts start",
