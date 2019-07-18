@@ -1,6 +1,6 @@
 import React, {FC} from 'react';
 
-import {ContextStore, newStore} from './ContextStore';
+import {MyStoreContext, newMyStore} from './MyStore';
 import Inputs from './Inputs';
 import TextBlue from './TextBlue';
 import TextRed from './TextRed';
@@ -10,14 +10,14 @@ import TextRed from './TextRed';
  */
 const App: FC = () => {
 	return (
-		<ContextStore.Provider value={newStore()}>
+		<MyStoreContext.Provider value={newMyStore()}>
 			<div>
 				<Inputs />
 				<hr />
 				<TextBlue />
 				<TextRed label="City" />
 			</div>
-		</ContextStore.Provider>
+		</MyStoreContext.Provider>
 	);
 };
 

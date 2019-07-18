@@ -1,9 +1,12 @@
 import React, {FC} from 'react';
 
-import useStore from './ContextStore';
+import useMyStore from './MyStore';
 
+/**
+ * Displays text from the store.
+ */
 const TextBlue: FC = () => {
-	const [store] = useStore();
+	const [store] = useMyStore();
 
 	return (
 		<div style={{color: 'blue'}}>{store.name}</div>

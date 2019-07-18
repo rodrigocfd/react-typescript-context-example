@@ -1,9 +1,12 @@
 import React, {FC} from 'react';
 
-import useStore from './ContextStore';
+import useMyStore from './MyStore';
 
+/**
+ * Changes values of the store.
+ */
 const Inputs: FC = () => {
-	const [store, setStore] = useStore();
+	const [store, setStore] = useMyStore();
 
 	return (
 		<div>

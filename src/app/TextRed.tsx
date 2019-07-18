@@ -1,13 +1,16 @@
 import React, {FC} from 'react';
 
-import useStore from './ContextStore';
+import useMyStore from './MyStore';
 
 interface Props {
 	label: string;
 }
 
+/**
+ * Displays text from the store.
+ */
 const TextRed: FC<Readonly<Props>> = p => {
-	const [store] = useStore();
+	const [store] = useMyStore();
 
 	return (
 		<div>
