@@ -8,8 +8,8 @@ import React from 'react';
  */
 function createMyStore() {
 	return {
-		name: '' as string,
-		city: '' as string
+		name: '', //as string,
+		city: '' //as string
 	};
 }
 
