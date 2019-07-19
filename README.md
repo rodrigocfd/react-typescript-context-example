@@ -14,7 +14,7 @@ This project is minimal, the step by step goes like this:
 
 * Store content is displayed in [TextBlue.tsx](src/app/TextBlue.tsx?ts=4) and [TextRed.tsx](src/app/TextRed.tsx?ts=4) with store returned from `useMyStore`.
 
-## Usage
+## How to use in your project
 
 Create your project normally:
 
