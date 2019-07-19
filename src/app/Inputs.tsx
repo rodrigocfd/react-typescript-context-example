@@ -11,13 +11,13 @@ const Inputs: FC = () => {
 	return (
 		<div>
 			<div>
-				Name {' '}
+				Name
 				<input type="text" autoComplete="off" value={store.name}
 					onChange={e => setStore({name: e.target.value})} />
 			</div>
 
 			<div>
-				City {' '}
+				City
 				<input type="text" autoComplete="off" value={store.city}
 					onChange={e => setStore({city: e.target.value})} />
 			</div>
