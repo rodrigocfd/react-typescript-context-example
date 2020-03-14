@@ -1,11 +1,11 @@
-import React, {FC} from 'react';
+import React from 'react';
 
 import useMyStore from './MyStore';
 
 /**
  * Displays text from the store.
  */
-const TextBlue: FC = () => {
+const TextBlue = () => {
 	const [store] = useMyStore();
 
 	return (

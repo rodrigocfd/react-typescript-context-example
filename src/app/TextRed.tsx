@@ -1,15 +1,15 @@
-import React, {FC} from 'react';
+import React from 'react';
 
 import useMyStore from './MyStore';
 
-interface Props {
-	label: string;
-}
+type Props = {
+	label: string
+};
 
 /**
  * Displays text from the store.
  */
-const TextRed: FC<Readonly<Props>> = p => {
+const TextRed = (p: Props) => {
 	const [store] = useMyStore();
 
 	return (
