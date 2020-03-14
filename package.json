@@ -7,14 +7,14 @@
 		"url": "https://github.com/rodrigocfd/react-typescript-context-example.git"
 	},
 	"dependencies": {
-		"@types/jest": "24.0.18",
-		"@types/node": "^12.7.5",
-		"@types/react": "16.9.2",
-		"@types/react-dom": "16.9.0",
-		"react": "^16.9.0",
-		"react-dom": "^16.9.0",
-		"react-scripts": "2.1.8",
-		"typescript": "3.6.3"
+		"@types/jest": "25.1.4",
+		"@types/node": "^13.9.1",
+		"@types/react": "16.9.23",
+		"@types/react-dom": "16.9.5",
+		"react": "^16.13.0",
+		"react-dom": "^16.13.0",
+		"react-scripts": "3.4.0",
+		"typescript": "3.8.3"
 	},
 	"scripts": {
 		"start": "react-scripts start",

@@ -1,6 +1,6 @@
 import React, {FC} from 'react';
 
-import {MyStoreContext, newMyStore} from './MyStore';
+import {MyStoreContext, useCreateMyStore} from './MyStore';
 import Inputs from './Inputs';
 import TextBlue from './TextBlue';
 import TextRed from './TextRed';
@@ -10,7 +10,7 @@ import TextRed from './TextRed';
  */
 const App: FC = () => {
 	return (
-		<MyStoreContext.Provider value={newMyStore()}>
+		<MyStoreContext.Provider value={useCreateMyStore()}>
 			<div>
 				<Inputs />
 				<hr />

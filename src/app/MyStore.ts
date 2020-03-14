@@ -27,7 +27,7 @@ export type GetSetTuple = [Readonly<MyStore>, SetMyStoreFunc];
  * of current component; intended to be used at your root component.
  * Return value can be passed to ContextStore.Provider.
  */
-export function newMyStore(): GetSetTuple {
+export function useCreateMyStore(): GetSetTuple {
 	return React.useState(createMyStore());
 };
 
