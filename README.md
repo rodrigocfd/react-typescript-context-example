@@ -6,18 +6,18 @@ A short React example of how to use [Context](https://reactjs.org/docs/context.h
 
 This project is minimal, the step by step goes like this:
 
-* Fields and default values of store are defined in [MyStore.ts](src/app/MyStore.ts?ts=4).
+* Fields and default values of context data are defined in [MyContext.tsx](src/app/MyContext.tsx?ts=4).
 
-* A new store is created in [App.tsx](src/app/App.tsx?ts=4) with `newMyStore`, which also encapsulates an useState call.
+* App is wrapped in our `MyContextProvider` in [App.tsx](src/app/App.tsx?ts=4).
 
-* Store is modified in [Inputs.tsx](src/app/Inputs.tsx?ts=4) with get/set tuple returned from `useMyStore`.
+* Context data is modified in [Inputs.tsx](src/app/Inputs.tsx?ts=4) with get/set tuple returned from `useMyContext`.
 
-* Store content is displayed in [TextBlue.tsx](src/app/TextBlue.tsx?ts=4) and [TextRed.tsx](src/app/TextRed.tsx?ts=4) with store returned from `useMyStore`.
+* Store data is displayed in [TextBlue.tsx](src/app/TextBlue.tsx?ts=4) and [TextRed.tsx](src/app/TextRed.tsx?ts=4) with data returned from `useMyContext`.
 
 ## How to use in your project
 
 Create your project normally:
 
-    create-react-app myproject --typescript
+    create-react-app myproject --template typescript
 
-Then just copy [MyStore.ts](src/app/MyStore.ts?ts=4) and modify the `createMyStore` function to suit your needs.
+Then just copy [MyContext.tsx](src/app/MyContext.tsx?ts=4) and modify the `createMyStore` function to suit your needs.
