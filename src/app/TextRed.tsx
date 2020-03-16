@@ -6,10 +6,8 @@ type Props = {
 	label: string
 };
 
-/**
- * Displays text from the store.
- */
-const TextRed = (p: Props) => {
+// Displays text from the store.
+function TextRed(p: Props) {
 	const [store] = useMyContext();
 
 	return (
@@ -18,6 +16,6 @@ const TextRed = (p: Props) => {
 			<span style={{color: 'red'}}>{store.city}</span>
 		</div>
 	);
-};
+}
 
 export default TextRed;

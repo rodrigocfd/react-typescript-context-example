@@ -2,10 +2,8 @@ import React from 'react';
 
 import {useMyContext} from './MyContext';
 
-/**
- * Changes values of the store.
- */
-const Inputs = () => {
+// Changes values of the store.
+function Inputs() {
 	const [store, setStore] = useMyContext();
 
 	return (
@@ -23,6 +21,6 @@ const Inputs = () => {
 			</div>
 		</div>
 	);
-};
+}
 
 export default Inputs;
