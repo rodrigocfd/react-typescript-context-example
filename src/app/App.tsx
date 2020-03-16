@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {MyStoreContext, useCreateMyStore} from './MyStore';
+import {MyContextProvider} from './MyContext';
 import Inputs from './Inputs';
 import TextBlue from './TextBlue';
 import TextRed from './TextRed';
@@ -9,14 +9,14 @@ import TextRed from './TextRed';
  * Application root component.
  */
 const App = () => (
-	<MyStoreContext.Provider value={useCreateMyStore()}>
+	<MyContextProvider>
 		<div>
 			<Inputs />
 			<hr />
 			<TextBlue />
 			<TextRed label="City" />
 		</div>
-	</MyStoreContext.Provider>
+	</MyContextProvider>
 );
 
 export default App;

@@ -1,12 +1,12 @@
 import React from 'react';
 
-import useMyStore from './MyStore';
+import {useMyContext} from './MyContext';
 
 /**
  * Changes values of the store.
  */
 const Inputs = () => {
-	const [store, setStore] = useMyStore();
+	const [store, setStore] = useMyContext();
 
 	return (
 		<div>

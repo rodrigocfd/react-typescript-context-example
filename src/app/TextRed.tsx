@@ -1,6 +1,6 @@
 import React from 'react';
 
-import useMyStore from './MyStore';
+import {useMyContext} from './MyContext';
 
 type Props = {
 	label: string
@@ -10,7 +10,7 @@ type Props = {
  * Displays text from the store.
  */
 const TextRed = (p: Props) => {
-	const [store] = useMyStore();
+	const [store] = useMyContext();
 
 	return (
 		<div>
