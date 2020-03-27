@@ -2,9 +2,9 @@ import React from 'react';
 
 import {useMyContext} from './MyContext';
 
-type Props = {
-	label: string
-};
+interface Props {
+	label: string;
+}
 
 // Displays text from the store.
 function TextRed(p: Props) {
