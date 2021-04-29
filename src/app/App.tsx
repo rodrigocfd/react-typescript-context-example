@@ -1,5 +1,3 @@
-import React from 'react';
-
 import {MyContextProvider} from './MyContext';
 import Inputs from './Inputs';
 import TextBlue from './TextBlue';

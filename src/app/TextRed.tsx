@@ -1,5 +1,3 @@
-import React from 'react';
-
 import {useMyContext} from './MyContext';
 
 interface Props {
